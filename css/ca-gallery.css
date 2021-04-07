@@ -750,7 +750,7 @@ fieldset[disabled] .btn-primary:hover {
 .btn-xl:hover {
     color: white;
     border-color: #005b77;
-    background-color: #2cacd3;
+    background-color: #005b77;
 }
 .btn-xl.active,
 .btn-xl:active,

@@ -45,7 +45,7 @@ function renderModal(projectId) {
                 <ul class="list-inline">
                   <li>Published at: ${proj.publishedAt}</li>
                 </ul>
-                <a target="_blank" href="projs/mine-sweeper-main/index.html">Visit my project</a>
+                <a target="_blank" href="projs/${proj.name}/index.html">Visit my project</a>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
                     Close Project</button>
