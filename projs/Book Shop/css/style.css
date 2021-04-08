@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+}
+
+body.rtl {
+    direction: rtl;
+}
+body{
+    position: relative;
+    background-image: url("../imgs/library.jpg")
+}
+
+table{
+    margin: auto;
+    border: 1px rgb(255, 255, 255) solid;
+    border-collapse: collapse;
+}
+
+td{
+    border: 1px rgb(255, 255, 255) solid;
+    min-width: 100px;
+    text-align: center;
+}
+
+h1{
+    font-size: medium;
+    text-shadow: 0px -4px 9px #ffffff;
+}
+.my-modal{
+    position: relative;
+    display: block;
+    top: -400px;
+    width: 60%;
+    height: 500px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.849);
+    text-align: center;
+}
+.my-modal h5{
+    position: relative;
+    top: 20px;
+    font-size: 70px;
+    color: rgb(20, 20, 20);
+    margin-bottom: 10px;
+    height: 175px;
+    text-decoration: black underline solid 4px ;
+}
+h6{
+   position: relative;
+   bottom: 50px;
+}
+.my-modal img{
+    position: relative;
+    box-shadow: 1px 0px 37px 16px rgba(12, 0, 0, 0.89);
+    height: 210px;
+    width: 140px;
+    bottom: 10px;
+
+}
+.close-modal{
+position: absolute;
+top: 0px;
+right: 0px;
+color: white;
+border-radius: 0px 0px 0px 5px;
+background-color:  rgb(0, 0, 0);
+border: 1px solid black;
+cursor: pointer;
+}
+
+.close-modal:hover{
+    background-color:rgba(0, 0, 0, 0.418); ;
+}
+.rate{
+position: relative ;
+margin-top: 20px;
+}
+.my-modal input{
+    width: 40px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.curr-book-id{
+    font-size: x-small;
+}
+.my-modal p{
+    font-size: x-small;
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+}
+td.new-book{
+    color: white;
+    border: black;
+    text-align: start;
+    width: 150px;
+    background-color: rgba(53, 53, 53, 0.822);
+    border-collapse: collapse;
+}
+td.add-btn {
+    border: black;
+    background-color: rgba(53, 53, 53, 0.822);
+}
+td.new-book input{
+    width: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+td .price,.title{
+    cursor: pointer;
+}
+.headers{
+    background-color: rgba(53, 53, 53, 0.822);
+    color: white;
+    font-style: oblique;
+}
+.book-preview{
+    background-color: rgba(0, 0, 0, 0.87);
+    color: white;
+}
+.book-preview .read-btn{
+    background-color: rgb(229, 255, 0, 0.596);
+    border:1px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.book-preview .update-btn{
+    background-color: rgb(30, 255, 0,0.596);
+    border:1px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.book-preview .remove-btn{
+    background-color: rgba(255, 0, 0, 0.596);
+    border:1px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.book-preview .remove-btn:hover{
+    background-color: red;
+    
+}
+.book-preview .update-btn:hover{
+    background-color: rgb(0, 255, 0);
+    
+}
+.book-preview .read-btn:hover{
+    background-color: yellow;
+}
+button.add{
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    background-color: white;
+    cursor: pointer;
+}
+button.add:hover{
+    background-color: rgb(167, 167, 167);
+    
+}
+.container h1{
+    margin-bottom: 40px;
+  opacity: 0.8;
+}
+select{
+    position: relative;
+    border-radius: 5px;
+    background-color: rgb(43, 43, 43);
+    color: rgb(255, 254, 253);
+    cursor: pointer;
+    margin: 5px;
+}
+.header-options{
+    margin-bottom: 10px;
+}
+
+.alert{
+    background-color:rgba(255, 255, 255, 0.767);
+    color: black;
+    position: relative;
+    width: 300px;
+    right: start;
+    margin-right: 400px;
+    margin-left: 400px;
+    margin-top: 50px;
+}
+
+.alert input{
+    background-color: rgb(65, 65, 65);
+    width: 80px;
+    color: white;
+}
+
+.alert button{
+    background-color: rgb(30, 255, 0,0.596);
+    border:1px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.alert button:hover{
+    background-color: rgba(30, 255, 0);
+    border:1px solid rgb(255, 255, 255);
+}

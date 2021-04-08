@@ -8,10 +8,16 @@ var gProjs =
     'projs/mine-sweeper-main/index.html',
     'APRIL|7th|2021/13:50',
     ['matrixes', 'keyboard events']),
+createProj('Book Shop',
+    'Orgenize your Shop storage ',
+    'A easy and comfortable platform to get your books orgenized',
+    'projs/Book Shop/index.html',
+    'APRIL|8th|2021/20:00',
+    ['matrixes', 'keyboard events']),
 createProj('chess',
     'Learn the movements of each chess piece',
     'a very comfortable platform to learn the basics of the chess pieces',
-    'projs/chess-start-here/index.html',
+    'projs/chess/index.html',
     'APRIL|7th|2021 14:40',
     ['matrixes', 'keyboard events']
 ),]

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book-shop</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="onInit()">
+    <header class="container text-center ">
+
+        <h1 class="h1 text-light display-1 font-weight-bold " data-trans="header">Book shop</h1>
+        <div class="header-options">
+            <select class="form-select form-select-lg mb-3" onchange="onSetLang(this.value)">
+                <option value="en">English</option>
+                <option value="he">עברית</option>
+            </select>
+            <button class="btn btn-dark btn-next-page" data-trans="next-page" onclick="onNextPage()">Next Page</button>
+        </div>
+    </header>
+    <table>
+        <tr class="headers">
+            <td>
+                <h1 class="id" data-trans="id">id</h1>
+            </td>
+            <td>
+                <h1 class="title" onclick="onTitleClick()" data-trans="title">Title</h1>
+            </td>
+            <td>
+                <h1 class="price" onclick="onPriceClick()" data-trans="price">Price</h1>
+            </td>
+            <td>
+                <h1 class="actions" data-trans="actions">Actions</h1>
+            </td>
+            <td class="new-book">
+                <span data-trans="new-name">new name:</span> <input type="text" name="new-book-name"
+                    data-trans="new-book-name" placeholder="Book Name?"><br>
+                <span data-trans="new-price">new price:</span> <input type="number" name="new-book-price"
+                    placeholder="0">
+            </td>
+            <td class="add-btn">
+                <button data-trans="add" class="add" onclick="onAddBook()">Add book</button>
+            </td>
+
+        </tr>
+        <tbody class="books-container">
+
+        </tbody>
+    </table>
+    <div class="alert alert-dark" role="alert" hidden>
+        <h4 data-trans="price-alert" class="alert-heading">What is the new price?</h4>
+        <hr>
+        <input  placeholder="0" type="number"> <button data-trans="new-price-btn" onclick="updateBook()"> update!</button>
+      </div>
+    <div class="my-modal" hidden>
+        <h5></h5>
+        <h6></h6>
+        <img src="">
+        <button class="close-modal" onclick="onCloseModal()">x</button>
+        <div class="rate">
+            <span>rate!</span>
+            <input oninput="onRateInput()" name="rating" type="number" min="0" max="10" value="0">
+        </div>
+    </div>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/util-service.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/i18n-service.js"></script>
+    <script src="js/book-service.js"></script>
+    <script src="js/book-controler.js"></script>
+</body>
+
+</html>
