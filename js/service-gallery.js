@@ -20,6 +20,13 @@ createProj('chess',
     'projs/chess/index.html',
     'APRIL|7th|2021 14:40',
     ['matrixes', 'keyboard events']
+),
+createProj('blogin',
+    'A responsive webPage to take ideas from',
+    'An assiment about making a pixel perfect responsive webPage that I had so much fun making ',
+    'projs/blogin/index.html',
+    'APRIL|13th|2021 21:30',
+    ['matrixes', 'keyboard events']
 ),]
 
 

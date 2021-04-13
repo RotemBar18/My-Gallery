@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="main-screen" onclick="toggleMenu()"></div>
+    <div class="modal-screen" onclick="toggleModalScreen()"></div>
+
+    <header class="main-header">
+        <div class="container flex space-between align-center">
+            <div class="logo">Blogin</div>
+            <ul class="main-nav flex clean-list">
+                <li class="nav-title">
+                    <div class="logo">Blogin</div> <button class="btn-menu" onclick="toggleMenu()">x</button>
+                </li>
+                <li><a class="flex-center active" href="#">Journal</a></li>
+                <li><a class="flex-center" href="#">About</a></li>
+                <li><a class="flex-center" href="#">Work</a></li>
+                <li><a class="flex-center" href="#">Contact</a></li>
+            </ul>
+            <button class="btn-menu" onclick="toggleMenu()">☰</button>
+        </div>
+    </header>
+
+    <main class="main-content container card-container flex">
+
+        <div class="card flex">
+            <img class="card-image" src="imgs/img1.jpg" alt="">
+            <div class="card-content flex">
+                <h2 class="card-title">
+                    Duis aute irure dolor in henderit in voluptate.</h2>
+                <p class="card-text ">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p class="card-text-b">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla
+                    pariatur...
+                </p>
+                <button class="card-btn" onclick="toggleModalScreen()">Continue Reading</button>
+            </div>
+        </div>
+        <div class="card flex">
+            <img class="card-image" src="imgs/img2.jpg" alt="">
+            <div class="card-content flex">
+                <h2 class="card-title">
+                    Duis aute irure dolor in henderit in voluptate.</h2>
+                <p class="card-text ">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p class="card-text-b">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla
+                    pariatur...
+                </p>
+                <button class="card-btn" onclick="toggleModalScreen()">Continue Reading</button>
+            </div>
+        </div>
+        <div class="card flex">
+            <img class="card-image" src="imgs/img3.jpg" alt="">
+            <div class="card-content flex">
+                <h2 class="card-title">
+                    Duis aute irure dolor in henderit in voluptate.</h2>
+                <p class="card-text ">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p class="card-text-b">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla
+                    pariatur...
+                </p>
+                <button class="card-btn" onclick="toggleModalScreen()">Continue Reading</button>
+            </div>
+        </div>
+        
+        <div class="modal flex" >
+            <h2 class="modal-title">
+                Join us to get access to the latest stories!
+            </h2>
+            <form class="flex" action="">
+                <p class="modal-text">If you want to get access to read more of our content make sure to leave your Email right here!</p>
+                <label for="email-input">Insert Email:
+                    <input type="email" id="email-input" class="modal-input" placeholder="example@XXXXX.com">
+                </label>
+                <button class="submit-btn" type="submit">submit</button>
+            </form>
+            <button class="close-modal" onclick="toggleModalScreen()">Close</button>
+        </div>
+
+
+        <div class="pages-btns flex">
+            <button class="pre-page">Previous</button>
+            <button class="next-page">Next</button>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container container flex-center ">
+            <h2 class="footer-title">Blogin</h2>
+            <small>© 2014 Blogin.com - All Rights Reserved - Find more free Templates at Pixelhint.com</small>
+            <ul class="social-nav flex clean-list">
+                <li><a class="facebook flex-center" href="#"><img src="imgs/facebook.png" alt=""></a></li>
+                <li><a class="twitter flex-center" href="#"><img src="imgs/twitter.png" alt=""></a></li>
+                <li><a class="be flex-center" href="#"><img src="imgs/be.png" alt=""></a></li>
+                <li><a class="ball flex-center" href="#"><img src="imgs/ball.png" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle('menu-open')
+        }
+        function toggleModalScreen() {
+            document.body.classList.toggle('read-more-open')
+        }
+    </script>
+</body>
+
+</html>
