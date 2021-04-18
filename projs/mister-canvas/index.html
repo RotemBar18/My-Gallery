@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mister-canvas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="init()">
+    <header class="head">
+        <h1 class="title">mister-canvas</h1>
+        <div class="options">
+            <input onchange="setColor(this.value)" type="color" value="#ffffff" class="color-input">
+            <input onchange="setOutLineColor(this.value)" type="color" class="color-input">
+            <select onchange="setShape(this.value)" name="shape-select" id="shape-select" class="shape-select">
+                <option value="square">Square</option>
+                <option value="right-triangle">Right Triangle</option>
+                <option value="left-triangle">Left Triangle</option>
+                <option value="circle">Circle</option>
+                <option value="line">Line</option>
+            </select>
+            <input type="file" class="file-input btn" name="image" onchange="onImgInput(event)" />
+
+            <form action="" method="POST" enctype="multipart/form-data" onsubmit="uploadImg(this, event)">
+                <input name="img" id="imgData" type="hidden" />
+        </div>
+    </header>
+    <div class="canvas-container">
+        <canvas id="my-canvas" onmousedown="onMouseDown(event)" onmousemove="onMouseMove(event)"
+            onmouseup="onMouseUp()"></canvas>
+    </div>
+    <div class="inputs">
+            <button class="btn" type="submit">Publish</button>
+            <a href="#" class="btn" onclick="downloadImg(this)" download="my-img.jpg">Download as jpeg</a>
+            <div class="share-container"></div>
+        </form>
+
+    </div>
+
+    <script src="js/upload-service.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

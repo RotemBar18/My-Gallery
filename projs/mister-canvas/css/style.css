@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.shape-select {
+    width: 100px;
+    color: black;
+}
+
+.canvas-container {
+    border: 1px solid black;
+    width: 90vw;
+    height: 70vh;
+}
+.inputs{
+    padding-top: 30px;
+}
