@@ -178,7 +178,7 @@ function addTouchListeners() {
 
 
 function downloadImg(elLink) {
-    var imgContent = gElCanvas.toDataURL('image/jpeg',1.0)
+    var imgContent = gElCanvas.toDataURL()
     elLink.href = imgContent
 }
 
